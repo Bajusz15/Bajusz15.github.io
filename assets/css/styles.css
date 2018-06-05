@@ -98,6 +98,7 @@ header {
     animation: 1s fadein 0.5s forwards;
     opacity: 0;
     color: #ffff;
+    z-index: 2;
 }
  @keyframes fadein {
      100% {
@@ -113,6 +114,9 @@ header nav {
 }
 header nav li {
     margin: 0 15px;
+}
+header nav li a{
+    cursor: pointer;
 }
 
 @media (max-width: 800px) {
