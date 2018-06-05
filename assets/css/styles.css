@@ -190,8 +190,8 @@ header nav li {
     font: normal 28px "Open Sans", sans-serif;
     margin-bottom: 20px;
 }
-/*my projects section*/
 
+/*my projects section*/
 .projects .grid div.item {
     flex-basis: 30%;
 }
@@ -200,8 +200,8 @@ div.item {
     float: left;
     overflow: hidden;
     margin: 10px 1%;
-    min-width: 300px;
-    max-width: 410px;
+    min-width: 360px;
+    max-width: 520px;
     width: 100%;
     background: #000000;
     text-align: center;
@@ -215,7 +215,10 @@ div.item * {
 div.item img {
     max-width: 100%;
     vertical-align: top;
-    height: 300px;
+    min-height: 210px;
+    max-height: 300px;
+    height: 100%;
+    position: center;
 }
 
 div.item i {
