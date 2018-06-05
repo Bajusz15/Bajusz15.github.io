@@ -267,7 +267,7 @@ div.item.green i {
 }
 
 div.item:hover img {
-    opacity: 0.3;
+    opacity: 0.6;
     filter: grayscale(100%);
 }
 
