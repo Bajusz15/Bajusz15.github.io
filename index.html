@@ -1,139 +1,550 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="google-site-verification" content="ypQfsG0lzi_cAP8TDd8a0QSZt4TbpEhpLLz_PyL4J80" />
-      <title>Máté Bajusz</title>
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-      <link rel="stylesheet" href="assets/css/styles.css">
-        <script
-                src="https://code.jquery.com/jquery-3.3.1.js"
-                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-                crossorigin="anonymous">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Website Title -->
+    <title>Máté Bajusz - Professional backend developer </title>
+    <!-- Bootstrap -->
 
-        </script>
-    </head>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font-Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Lightbox -->
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- Text Rotator-->
+	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+	<!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
+	<!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+	<!-- Animations -->
 
-    <body>
-      <header>
-        <h2><a href="#">Máté Bajusz</a></h2>
-        <nav>
-            <li><a href="#aboutMe">About</a></li>
-            <li><a href="#mySkills">Skills</a></li>
-         <li> <a href="#myProjects" >Projects</a></li>
-         <li> <a href="#contactMe">Contact</a></li>
-        </nav>
-      </header>
+      <link rel="stylesheet" href="css/termynal.css">
+    <link href="css/animate.css" rel="stylesheet">
 
-        <section class="hero">
-            <div class="background-image" style="background-image: url(https://images.unsplash.com/photo-1495681878959-c54e6ffab2ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6ff9209fb997821ba6b6c0946ef357e&auto=format&fit=crop&w=1917&q=80);"></div>
-            <div class="hero-content-area">
-                <h1>Máté Bajusz</h1>
-                <h3>Fullstack Web Developer</h3>
-                <a href="#contactMe" class="btn">Contact Me</a>
+	<!-- Custom Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="assets/html5shiv/html5shiv.js"></script>
+    <script src="assets/respond/respond.min.js"></script>
+
+    <![endif]-->
+  </head>
+    <body id="top">
+
+      <!-- ****************************** Preloader ************************** -->
+      <div id="preloader"></div>
+
+
+	  	<!-- ==========================
+        HEADER SECTION 
+        =========================== -->
+        <header id="home">
+		    <!-- creative menu -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="menu-wrap">
+				<nav class="menu">
+				    <!-- Menu Links -->
+					<div class="icon-list">
+						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+						<a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+						<a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Skills</span></a>
+						<a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
+						<a href="index.html#blog"><i class="fa fa-fw fa-rss"></i><span>Downloads</span></a>
+						<a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+					</div>
+				</nav>
+			    </div>
+			    <button class="menu-button" id="open-button"></button><!-- menu button -->
+              </div><!--/row-->
+            </div><!--/container-->
+		  <!-- Header Image -->
+          <section class="hero" id="hero">
+            <div class="container">
+			  <!-- Slider Button (don't edit!)-->
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                </div>
+              </div>
+			  <!-- HEADER HEADLINE -->
+              <div class="row">
+                <div class="col-md-8 col-md-offset-1 inner">
+                  <h1 class="animated fadeInDown">
+                    M<span style="color:#E04343;">á</span>té<br/>
+                    <span>B<span style="color:#FFE800">aj</span>usz</span>
+                  </h1><!-- Title -->
+                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Backend Developer, Fullstack Developer, Web developer</span></h3><!-- Text Rotator -->
+                </div>
+              </div>
+			  <!-- Learn More Button -->
+              <div class="row" >
+                  <div class="col-md-2"></div>
+                  <div class="col-md-7 col-md-offset-1" id="termynal" data-termynal style="position: absolute; margin-top: 20px; " >
+                      <span data-ty="input">git clone https://github.com/bajusz15/multi-docker</span>
+                      <span data-ty>Cloning into 'multi-docker'...</span>
+                      <span data-ty="progress"></span>
+                      <span data-ty>Unpacking objects: 100% (67/67), done.</span>
+                  </div>
+                <div class="col-md-3 col-md-push-2 text-center">
+                    <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+                        <p>SEE MORE</p>
+                        <p class="scrollto--arrow" style="color: black; "><img src="img/scroll-down.png" alt="scroll down arrow"></p>
+                    </a>
+                </div>
+                  <div class="col-md-2"></div>
+              </div>
             </div>
-        </section>
+          </section>
+		  <!-- Header Image End -->
+        </header>
+		<!-- ==========================
+        HEADER SECTION END  
+        =========================== -->
+		
+		
+		
+		
+		<!-- ==========================
+        ABOUT SECTION  
+        =========================== -->
 
-        <section class="about" id="aboutMe">
-            <h3 class="title">About me</h3>
-            <h4>-Hi, I'm Máté Bajusz, web developer.</h4>
-            <p>I've always been interested in how things work, particularly computers, so I fell in love with programming.
-                I strive for the best in everything and I hate to be not winning.
-                If I'm not coding, you can find me in the gym or hanging out with my friends.</p>
-            <p>Right now I work as a Backend Developer at Webpont, but I'm available for remote work - if you would like to build something together, <a href="#contactMe">get in touch?</a></p>
+        <section class="intro text-center section-padding color-bg" id="about">
+          <div class="container">
 
-        </section>
-
-        <section class="projects" id="myProjects">
-            <h3 class="title">Recent Projects</h3>
-            <p>These are my most recent projects</p>
-            <hr>
-
-            <div class="grid">
-                <div class="item red">
-                    <img src="assets/img/hunbasket.png"/>
-                    <i class="fab fa-laravel"></i>
-                    <a href="http://hunbasket.hu/"></a>
-                </div>
-
-                <div class="item blue">
-                    <img src="assets/img/portfolio.png"/>
-                    <i class="fas fa-code"></i>
-                    <a href="#"></a>
-                </div>
-
-                <div class="item green">
-                    <img src="assets/img/menshairproducts.png"/>
-                    <i class="fab fa-node"></i>
-                    <a href="http://www.mens-hairproducts.com/products"></a>
-                </div>
-
+		    <!-- WELCOME TEXT -->
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
+				<!-- about / welcome text -->
+                <p>I've always been interested in how things work, particularly computers, so I fell in love with programming. I strive for the best in everything and I hate to be not winning.
+                    I'm independently motivated. If I'm not coding, I'm usually motorcycling, learning a new skill, or I'm in the gym. <!-- <a href="#">waterfall</a> --> </p>
+              </div>
             </div>
+          </div>
         </section>
 
-        <section class="skills" id="mySkills">
-            <h3 class="title">Skills</h3>
-            <p>The main are of my expertise is backend development (where all the logic and security happens).</p>
-            <p>Go, Node.js, PHP, SQL, mongoDB, Docker, Heroku, AWS, building small to big scalable web apps.</p>
-            <p>I also have full-stack experience. I work with JavaScript, Bootstrap, CSS3, ES6, React, on the frontend. I worked with Wordpress too.</p>
-            <hr>
-            <p>Long story short, I know how to develop and deploy
-               scalable, lightning fast web applications, websites. If performance and concurrency is key, I'm spot on. </p>
-            <hr>
 
-            <ul class="grid">
-                <li>
-                    <img src="https://img.icons8.com/color/96/000000/golang.png" style="padding-top: 14px">
-                    <h4 >Go</h4>
-                </li>
-                <li>
-                    <i class="fab fa-node fa-7x"></i>
-                    <h4>Node.js</h4>
-                    <p></p>
-                </li>
 
-                <li>
-                    <i class="fab fa-react fa-7x"></i>
-                    <h4>React</h4>
-                    <p></p>
-                </li>
-                <li>
-                    <i class="fab fa-js-square fa-7x"></i>
-                    <h4>JavaScript</h4>
-                </li>
-                <li>
-                    <i class="fas fa-cloud fa-7x"></i>
-                    <h4>Cloud: Heroku, AWS</h4>
-                </li>
-                <li>
-                    <i class="fas fa-database fa-7x"></i>
-                    <h4>Database: SQL(MySQL, PostgreSQL) and mongoDB</h4>
-                </li>
-            </ul>
+
+<!-- ==========================
+        SERVICE SECTION 
+        =========================== -->
+        <section class="features text-center section-padding" id="service">
+          <div class="container">
+        <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">My skills and services</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+          <div class="services">
+          <!-- Service Box 1 -->
+                  <div class="col-md-4 wp2 item">
+                    <div class="icon">
+                        <i class="fa fa-bolt"></i><!-- Icon -->
+                    </div>
+                    <h2>Scalable backend</h2><!-- Title -->
+                    <p>If you plan to scale your applications to thousands or millions of users you have to bake scalability into the app from the beginning.</p><!-- Description -->
+                  </div>
+          <!-- Service Box 2 -->
+                  <div class="col-md-4 wp2 item delay-05s">
+                    <div class="icon">
+                      <i class="fa fa-desktop"></i><!-- Icon -->
+                    </div>
+                    <h2>Web applications</h2><!-- Title -->
+                    <p>I can build web apps, websites with Go, JavaScript, PHP. I prefer backend prototyping but I can do some basic frontend.</p><!-- Description -->
+                  </div>
+          <!-- Service Box 3 -->
+                  <div class="col-md-4 wp2 item delay-1s">
+                    <div class="icon">
+                      <i class="fa fa-cubes"></i><!-- Icon -->
+                    </div>
+                    <h2>Microservices</h2><!-- Title -->
+                    <p>The key to scaling and simplicity apart from choosing the right languages and tools is microservices architecture. I use AWS to deploy seperate services.</p><!-- Description -->
+                  </div>
+          </div>
+                  <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section class="contact" id="contactMe">
-            <h3 class="title">Contact Me</h3>
-            <p>You can reach me via email at bajusz5.mate@gmail.com</p>
-            <hr>
-            <div class="social">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/m%C3%A1t%C3%A9-bajusz-692617161/"><i class="fab fa-linkedin fa-5x"></i></a></li>
-                    <li><a href="https://github.com/Bajusz15"><i class="fab fa-github-square fa-5x"></i></a></li>
-                    <li><a href="mailto:bajusz5.mate@gmail.com"><i class="fas fa-envelope-square fa-5x"></i></a></li>
+
+
+
+
+		<div class="container-fluid">
+		    <!-- About 1 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/golang.jpeg)"></div><!-- about image 1 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>High traffic backend with Go</h6><!-- headline-->
+					<p>I have experience building APIs with Go, using microservices as architecture. I used gRPC, Gin, gorilla, and many other popular libraries/frameworks.
+                    I usually use Docker containers for my apps.</p><br><!-- About Text 1 -->
+					<a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->			
+				</div>
+			</div>
+			<!-- About 2 -->
+			<div class="row">
+				<div class="col-md-6 about-text">
+					<h6>Databases</h6><!-- Headline -->
+					<p>I use SQL almost every day, MySQL and PostgreSQL exactly. I have some experience with MongoDB and Redis too.</p><br><!-- About Text 2 -->
+					<a href="index.html#team" class="weight-outline-btn">Read more</a>	<!-- read more button  -->				
+				</div>
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/databases.jpg)"></div><!-- about image 2 -->
+				</div>
+			</div>
+			<!-- About 3 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/cloud.jpeg)"></div><!-- about image 3 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>Cloud</h6><!-- Headline-->
+					<p> So far I explored AWS and Heroku. I am planning to do an AWS Developer Associate exam in the near future, and an AWS Solutions architect associate when I'm ready for it.</p><br><!-- About Text 3 -->
+					<a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->					
+				</div>
+			</div>
+		</div>
+      <div class="row">
+          <div class="col-md-6 about-text">
+              <h6>Web applications, websites</h6><!-- Headline -->
+              <p>I can build stuff in Go, JavaScript, PHP. I have experience with Node.js, jQuery, Laravel and basic Object Oriented PHP, PDO. Still learning React. I know HTML5 and CSS of course. </p><br><!-- About Text 2 -->
+              <a href="index.html#team" class="weight-outline-btn">Read more</a>	<!-- read more button  -->
+          </div>
+          <div class="col-md-6 nopadding features-intro-img">
+              <div class="about-image" style="background-image:url(img/webapp.jpeg)"></div><!-- about image 2 -->
+          </div>
+      </div>
+		<!-- ==========================
+        ABOUT SECTION END
+        =========================== -->	
+
+		
+		
+		
+		<!-- ==========================
+        PORTFOLIO SECTION
+    =========================== -->
+        <section class="swag text-center" id="portfolio">
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <h1 class="arrow">
+                Recent <span>Projects</span>
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <div class="row row-offset-0">
+  				 
+          <!-- PORTFOLIO ITEM 1 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/hunbasket-large.png" data-lightbox="roadtrip" title="Project One - Basketball website, hunbasket.hu"><img class="grayscale" src="img/portfolio/hunbasket-thumbnail.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  	
+  	    <!-- PORTFOLIO ITEM 2 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/wbdashboard1-large.png" data-lightbox="roadtrip" title="Project Two - Dashboard for sport analytics site"><img class="grayscale" src="img/portfolio/wbdashboard1-thumbnail.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 3 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/wbdahboard2-large.png" data-lightbox="roadtrip" title="Project Three - Dashboard for sport analytics site"><img class="grayscale" src="img/portfolio/wbdahboard2-thumbnail.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 4 -->
+          <div class="col-md-3 col-sm-6 ">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/wbdashboard3-large.png" data-lightbox="roadtrip" title="Project Four - Dashboard for sport analytics site"><img class="grayscale" src="img/portfolio/wbdashboard3-thumbnail.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  	             
+          <!-- PORTFOLIO ITEM 5 -->
+          <div class="col-md-3 col-sm-6 ">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/menshair-large.png" data-lightbox="roadtrip" title="Project Five - mens-hairproducts.com"><img class="grayscale" src="img/portfolio/menshair-thumbnail.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  	
+  	    <!-- PORTFOLIO ITEM 6 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/multi-docker-large.png" data-lightbox="roadtrip" title="Project Six - Lorem Ipsum"><img class="grayscale" src="img/portfolio/multi-docker-thumbnail.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 7 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/gocode-large.png" data-lightbox="roadtrip" title="Project Seven - random go code"><img class="grayscale" src="img/portfolio/gocode-thumbnail.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 8 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/grpc-go-large.png" data-lightbox="roadtrip" title="Project Eight - grpc-go"><img class="grayscale" src="img/portfolio/grpc-go-thumbnail.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+        </div><!--/row-->
+      </div><!--/.container-->
+		<!-- ==========================
+        PORTFOLIO SECTION END
+        =========================== -->
+			
+
+
+			
+		<!-- ==========================
+        CUSTOM SPACER
+        =========================== -->
+		<div class="spacer-cta text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="index.html#contact" class="outline-btn">hire mate bajusz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!-- ==========================
+        CUSTOM SPACER END
+        =========================== -->
+		
+		
+
+    <!-- ==========================
+        BLOG SECTION 
+        =========================== -->
+    <section class="text-center section-padding" id="blog">
+          <div class="container">
+        <!-- Headline -->
+        <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Download <span>resume, code</span></h1>
+              </div>
+            </div><br><br>
+      
+      <!-- Blog Slider -->
+            <div class="row">
+              <div id="blogSlider">
+                <ul class="slides">
+                  <li>
+            <!-- Blog Entry 1 -->
+                    <div class="col-md-4 wp4">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/resume.png" class="grayscale" alt="Blog Item" href="bajuszmateresume.pdf"><!-- Blog Image -->
+                        </div>
+                      </div>
+            <br>
+                      <h2><a href="bajuszmateresume.pdf">Resume</a></h2><!-- Headline -->
+                      <p>my resume</p><!-- Description-->
+                    </div>
+          <!-- Blog Entry 2 -->
+                    <div class="col-md-4 wp4 delay-05s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/multi-docker.png" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                        </div>
+                      </div>
+            <br>
+                      <h2><a href="https://github.com/bajusz15/multi-docker">Multi-docker</a></h2><!-- Headline -->
+                      <p>an app with containers of node, react, postgres, redis, nginx. Start it with docker-compose up.</p><!-- Description -->
+                    </div>
+          <!-- Blog Entry 3 -->
+                    <div class="col-md-4 wp4 delay-1s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio/grpc-go-thumbnail.png"  class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                        </div>
+                      </div>
+            <br>
+                      <h2><a href="https://github.com/Bajusz15/grpc-golang">grpc-go</a></h2><!-- Headline -->
+                      <p>3 clients and servers in go, using grpc.</p><!-- Description-->
+                    </div>
+                  </li>
                 </ul>
+              </div>
             </div>
+          </div>
         </section>
-    </body>
-    <script>
-        $(document).on('click', 'a[href^="#"]', function (event) {
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, 1200);
-        });
+    <!-- ==========================
+        BLOG SECTION END
+        =========================== -->
+    
+
+
+		<!-- ==========================
+        CLIENT SECTION
+        =========================== -->
+
+		<!-- ==========================
+        CLIENTS SECTION END
+        =========================== -->
+
+
+
+
+
+		<!-- ==========================
+        NEWSLETTER SECTION
+        =========================== -->
+
+		<!-- ==========================
+        NEWSLETTER SECTION END
+        =========================== -->
+
+		
+		
+		<!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+        <section class="text-center section-padding contact-wrap" id="contact">
+		  <!-- To Top Button -->
+          <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Drop <span>me</span> a line</h1>
+              </div>
+            </div>
+            <div class="row contact-details">
+			  <!-- Adress Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+                  <p>Miskolc, Hungary</p>
+                </div>
+              </div>
+			  <!-- Phone Number Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+                  <p>+36309828187</p>
+                </div>
+              </div>
+			  <!-- E-Mail Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                  <p><a href="index.html#">bajszmate99@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+			<br>
+			<!-- Social Buttons - use font-awesome, past in what you want -->
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="social-buttons">
+                  <li><a href="https://github.com/Bajusz15" class="social-btn"><i class="fa fa-github"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/máté-bajusz-692617161/" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+		<!-- ==========================
+        CONTACT SECTION END
+        =========================== -->
+		
+		
+		
+		<!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>All Rights Reserved. &copy; 2019 Máté Bajusz</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+		<!-- ==========================
+        FOOTER SECTION END
+        =========================== -->
+
+      <script src="js/termynal.js" data-termynal-container="#termynal"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- SmoothScroll -->           
+    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/waypoints.min.js"></script>
+    <!-- classie.js -->
+	<script src="js/classie.js"></script>
+    <!-- FlexSlider -->
+    <script src="assets/flexslider/jquery.flexslider.js"></script>
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+	<!-- Text Rotator -->
+	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+	<!-- Lightbox.js -->
+    <script src="assets/lightbox/js/lightbox.min.js"></script>
+    <!-- Google Maps -->
+	<!-- Theme JavaScript Core -->
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
+
+
+	
+	<!-- TEXT ROTATOR SETTINGS -->
+    <script type="text/javascript">
+    $(".rotate").textrotator({
+      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      speed: 2000 // How many milliseconds until the next word show.
+    });
     </script>
+	
+    </body>
 </html>
