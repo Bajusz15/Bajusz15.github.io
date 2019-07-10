@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-site-verification" content="ypQfsG0lzi_cAP8TDd8a0QSZt4TbpEhpLLz_PyL4J80" />
+      <title>Máté Bajusz</title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link rel="stylesheet" href="oldassets/css/styles.css">
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous">
+
+        </script>
+    </head>
+
+    <body>
+      <header>
+        <h2><a href="#">Máté Bajusz</a></h2>
+        <nav>
+            <li><a href="#aboutMe">About</a></li>
+            <li><a href="#mySkills">Skills</a></li>
+         <li> <a href="#myProjects" >Projects</a></li>
+         <li> <a href="#contactMe">Contact</a></li>
+        </nav>
+      </header>
+
+        <section class="hero">
+            <div class="background-image" style="background-image: url(https://images.unsplash.com/photo-1495681878959-c54e6ffab2ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6ff9209fb997821ba6b6c0946ef357e&auto=format&fit=crop&w=1917&q=80);"></div>
+            <div class="hero-content-area">
+                <h1>Máté Bajusz</h1>
+                <h3>Fullstack Web Developer</h3>
+                <a href="#contactMe" class="btn">Contact Me</a>
+            </div>
+        </section>
+
+        <section class="about" id="aboutMe">
+            <h3 class="title">About me</h3>
+            <h4>-Hi, I'm Máté Bajusz, web developer.</h4>
+            <p>I've always been interested in how things work, particularly computers, so I fell in love with programming.
+                I strive for the best in everything and I hate to be not winning.
+                If I'm not coding, you can find me in the gym or hanging out with my friends.</p>
+            <p>Right now I work as a Backend Developer at Webpont, but I'm available for remote work - if you would like to build something together, <a href="#contactMe">get in touch?</a></p>
+
+        </section>
+
+        <section class="projects" id="myProjects">
+            <h3 class="title">Recent Projects</h3>
+            <p>These are my most recent projects</p>
+            <hr>
+
+            <div class="grid">
+                <div class="item red">
+                    <img src="oldassets/img/hunbasket.png"/>
+                    <i class="fab fa-laravel"></i>
+                    <a href="http://hunbasket.hu/"></a>
+                </div>
+
+                <div class="item blue">
+                    <img src="oldassets/img/portfolio.png"/>
+                    <i class="fas fa-code"></i>
+                    <a href="#"></a>
+                </div>
+
+                <div class="item green">
+                    <img src="oldassets/img/menshairproducts.png"/>
+                    <i class="fab fa-node"></i>
+                    <a href="http://www.mens-hairproducts.com/products"></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="skills" id="mySkills">
+            <h3 class="title">Skills</h3>
+            <p>The main are of my expertise is backend development (where all the logic and security happens).</p>
+            <p>Go, Node.js, PHP, SQL, mongoDB, Docker, Heroku, AWS, building small to big scalable web apps.</p>
+            <p>I also have full-stack experience. I work with JavaScript, Bootstrap, CSS3, ES6, React, on the frontend. I worked with Wordpress too.</p>
+            <hr>
+            <p>Long story short, I know how to develop and deploy
+               scalable, lightning fast web applications, websites. If performance and concurrency is key, I'm spot on. </p>
+            <hr>
+
+            <ul class="grid">
+                <li>
+                    <img src="https://img.icons8.com/color/96/000000/golang.png" style="padding-top: 14px">
+                    <h4 >Go</h4>
+                </li>
+                <li>
+                    <i class="fab fa-node fa-7x"></i>
+                    <h4>Node.js</h4>
+                    <p></p>
+                </li>
+
+                <li>
+                    <i class="fab fa-react fa-7x"></i>
+                    <h4>React</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <i class="fab fa-js-square fa-7x"></i>
+                    <h4>JavaScript</h4>
+                </li>
+                <li>
+                    <i class="fas fa-cloud fa-7x"></i>
+                    <h4>Cloud: Heroku, AWS</h4>
+                </li>
+                <li>
+                    <i class="fas fa-database fa-7x"></i>
+                    <h4>Database: SQL(MySQL, PostgreSQL) and mongoDB</h4>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact" id="contactMe">
+            <h3 class="title">Contact Me</h3>
+            <p>You can reach me via email at bajusz5.mate@gmail.com</p>
+            <hr>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/m%C3%A1t%C3%A9-bajusz-692617161/"><i class="fab fa-linkedin fa-5x"></i></a></li>
+                    <li><a href="https://github.com/Bajusz15"><i class="fab fa-github-square fa-5x"></i></a></li>
+                    <li><a href="mailto:bajusz5.mate@gmail.com"><i class="fas fa-envelope-square fa-5x"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </body>
+    <script>
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1200);
+        });
+    </script>
+</html>

@@ -79,7 +79,7 @@ audio,canvas,video {
 	*display:inline;
 	*zoom: 1;
 }
-* Remove excess height in iOS 5 devices. */
+/* Remove excess height in iOS 5 devices. */
 audio:not([controls]) {
 	display:none;
 	height:0;
@@ -453,7 +453,7 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	background: url('../img/do') right bottom no-repeat;
+	/*background: url('../img/d') right bottom no-repeat;*/
 	background-size: contain;
 	padding:110px 0 100px 0;
 	height:auto;

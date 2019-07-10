@@ -46,7 +46,7 @@
 }
 
 [data-termynal]:after {
-    content: 'bash';
+    content: 'zsh';
     position: absolute;
     color: var(--color-text-subtle);
     top: 5px;
@@ -74,7 +74,7 @@
 }
 
 [data-ty="input"]:before {
-    content: '$';
+    content: '~';
 }
 
 [data-ty][data-ty-prompt]:before {
